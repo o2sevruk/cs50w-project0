@@ -8,25 +8,43 @@
 		/>
 	</head>
 	<body>
-		<nav class="text-right">
-			<ul>
-				<li>
-					<a href="./image.html">Image Search</a>
-				</li>
-				<li>
-					<a href="./advanced.html">Advanced Search</a>
-				</li>
-			</ul>
-		</nav>
-		<form action="https://google.com/search">
-			<input
-				type="text"
-				name="q"
-			/>
-			<input
-				type="submit"
-				value="Google Search"
-			/>
-		</form>
+		<header>
+			<nav class="text-right">
+				<ul>
+					<li>
+						<a href="./image.html">Image Search</a>
+					</li>
+					<li>
+						<a href="./advanced.html">Advanced Search</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="container">
+				<form action="https://google.com/search">
+					<div class="field-group">
+						<input
+							type="text"
+							name="q"
+						/>
+					</div>
+					
+					<div class="text-center">
+						<button
+							type="submit"
+							name="btnK"
+						>Google Search
+						</button>
+						<button
+							type="submit"
+							name="btnI"
+						>I'm Feeling Lucky
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
 	</body>
 </html>
