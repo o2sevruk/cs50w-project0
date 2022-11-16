@@ -2,6 +2,10 @@
 <html lang="en">
 	<head>
 		<title>Advanced Search</title>
+		<link
+			rel="stylesheet"
+			href="./assets/css/styles.css"
+		/>
 	</head>
 	<body>
 		<nav class="text-right">
@@ -11,15 +15,62 @@
 				</li>
 			</ul>
 		</nav>
-		<form action="https://google.com/advanced_search">
-			<input
-				type="text"
-				name="q"
-			/>
-			<input
-				type="submit"
-				value="Google Advanced Search"
-			/>
-		</form>
+		
+		<main>
+			<div class="container">
+				<h4>Find pages with...</h4>
+				<form action="https://google.com/search">
+					<div class="field-group">
+						<label for="asQ">all these words:</label>
+						<div>
+							<input
+								id="asQ"
+								type="text"
+								name="as_q"
+							/>
+						</div>
+					</div>
+					<div class="field-group">
+						<label for="asEpq">this exact word or phrase:</label>
+						<div>
+							<input
+								id="asEpq"
+								type="text"
+								name="as_epq"
+							/>
+						</div>
+					</div>
+					<div class="field-group">
+						<label for="asOq">any of these words:</label>
+						<div>
+							<input
+								id="asOq"
+								type="text"
+								name="as_oq"
+							/>
+						</div>
+					</div>
+					<div class="field-group">
+						<label for="asEq">none of these words:</label>
+						<div>
+							<input
+								id="asEq"
+								type="text"
+								name="as_eq"
+							/>
+						</div>
+					</div>
+					<div class="text-right">
+						<button
+							class="btn-advanced"
+							type="submit"
+							name="btnK"
+						>
+							Advanced Search
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
 	</body>
 </html>
