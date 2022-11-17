@@ -16,55 +16,67 @@
 			</ul>
 		</nav>
 		
-		<main>
-			<div class="container">
-				<h4>Find pages with...</h4>
+		<main class="main-advanced">
+			<div class="container-full">
+				<div class="field-group field-group-heading">
+					<h4>Find pages with...</h4>
+					<div class="field-wrap"></div>
+					<div class="field-hint">To do this in the search box.</div>
+				</div>
 				<form action="https://google.com/search">
-					<div class="field-group">
+					<div class="field-group field-group-advanced">
 						<label for="asQ">all these words:</label>
-						<div>
+						<div class="field-wrap">
 							<input
 								id="asQ"
+								class="input-advanced"
 								type="text"
 								name="as_q"
 							/>
 						</div>
+						<div class="field-hint">Type the important words: <em>tri-colour rat terrier</em></div>
 					</div>
-					<div class="field-group">
+					<div class="field-group field-group-advanced">
 						<label for="asEpq">this exact word or phrase:</label>
-						<div>
+						<div class="field-wrap">
 							<input
 								id="asEpq"
+								class="input-advanced"
 								type="text"
 								name="as_epq"
 							/>
 						</div>
+						<div class="field-hint">Put exact words in quotes: <em>"rat terrier"</em></div>
 					</div>
-					<div class="field-group">
+					<div class="field-group field-group-advanced">
 						<label for="asOq">any of these words:</label>
-						<div>
+						<div class="field-wrap">
 							<input
 								id="asOq"
+								class="input-advanced"
 								type="text"
 								name="as_oq"
 							/>
 						</div>
+						<div class="field-hint">Type OR between all the words you want: <em>miniature OR standard</em></div>
 					</div>
-					<div class="field-group">
+					<div class="field-group field-group-advanced">
 						<label for="asEq">none of these words:</label>
-						<div>
+						<div class="field-wrap">
 							<input
 								id="asEq"
+								class="input-advanced"
 								type="text"
 								name="as_eq"
 							/>
 						</div>
+						<div class="field-hint">Put a minus sign just before words that you don't want: <em>-rodent, -"Jack
+																																																Russell"</em></div>
 					</div>
-					<div class="text-right">
+					<div class="btn-wrap btn-wrap-advanced">
 						<button
 							class="btn-advanced"
 							type="submit"
-							name="btnK"
 						>
 							Advanced Search
 						</button>
